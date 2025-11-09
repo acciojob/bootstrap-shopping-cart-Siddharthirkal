@@ -4,10 +4,155 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body{
+			background-color:#eee;
+		}
+		.block-heading{
+			text-align:center;
+			margin-bottom:40px;
+			color:#3b99e0;
+		}
+		 .block-heading p {
+      text-align: center;
+      color: #6c757d;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+		.product {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      border-radius: 5px;
+    }
+
+    .summary {
+      background-color: #f7fbff;
+      border-top: 3px solid #5ea4f3;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .summary h5 {
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .summary .btn {
+      background-color: #3b99e0;
+      color: white;
+      width: 100%;
+      border-radius: 25px;
+    }
+
+    .summary .btn:hover {
+      background-color: #348fd4;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: 600;
+    }
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="container my-5">
+		<div class="block-heading">
+			<h2>Shopping cart</h2>
+			<p>The customer is very important, the customer will be followed by the customer. Now, as an run, I have no right to be in possession of property.</p>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="product">
+					<div class="row">
+						<div class="col-md-3">
+							<img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" class="img-fluid" alt="product">
+						</div>
+						<div class="col-md-6">
+							<h6 class="text-primary">I am very sorry</h6>
+							<p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+						</div>
+						<div class="col-md-3 text-end">
+							<p>Quantity:</p>
+							<input type="number" value="0" class="form-control mb-2" style="width:70px; display:inline;">
+							<div class="price">$120</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="product">
+					<div class="row">
+						<div class="col-md-3">
+							<img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" class="img-fluid" alt="product">
+						</div>
+						<div class="col-md-6">
+							<h6 class="text-primary">I am very sorry</h6>
+							<p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+						</div>
+						<div class="col-md-3 text-end">
+							<p>Quantity:</p>
+							<input type="number" value="0" class="form-control mb-2" style="width:70px; display:inline;">
+							<div class="price">$120</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="product">
+					<div class="row">
+						<div class="col-md-3">
+							<img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" class="img-fluid" alt="product">
+						</div>
+						<div class="col-md-6">
+							<h6 class="text-primary">I am very sorry</h6>
+							<p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+						</div>
+						<div class="col-md-3 text-end">
+							<p>Quantity:</p>
+							<input type="number" value="0" class="form-control mb-2" style="width:70px; display:inline;">
+							<div class="price">$120</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="summary">
+					<h5>Summary</h5>
+					<div class="d-flex justify-content-between">
+						<span>Subtotal</span>
+						<span>$360</span>
+					</div>
+					<div class="d-flex justify-content-between">
+						<span>Discount</span>
+						<span>$0</span>
+					</div>
+					<div class="d-flex justify-content-between">
+						<span>Shipping</span>
+						<span>$0</span>
+					</div>
+					<hr>
+					<div class="d-flex justify-content-between">
+						<span>Total</span>
+						<span>$360</span>
+					</div>
+					<button class="btn mt-3">checkout</button>
+				</div>
+			</div>
+		</div>
+	</div>
+					
+
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
